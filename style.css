@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap");
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Amatic SC;
+  font-size: 30px;
+  background-color: #DFC79F;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+  justify-content: center;
+  gap: 15px;
+  background-color: #4D2E19;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:active,
+a:focus,
+a:hover {
+  color: #C8915B;
+}
+
+#header-img {
+  width: 70px;
+  
+  padding: 20px 0 20px 20px;
+}
+
+.header__flex {
+  display: flex;
+  background-color: #C8915B;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+h1 {
+  margin: 0;
+}
+
+#video {
+  width: 100%;
+  height: 200px;
+}
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+input {
+  width: 250px;
+  font-family: Amatic SC;
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#submit {
+  color: white;
+  background-color: #4D2E19; 
+  border: none;
+  margin: 0 auto;
+}
+
+#submit:hover,
+#submit:focus,
+#submit:active {
+  background-color: #C8915B;
+  color: black;
+}
+
+#products {
+  background-color: #CCA366;
+  padding: 0 30px 30px 30px;
+}
+
+#about,
+#contact {
+  padding: 0 30px 30px 30px;
+}
+
+h2 {
+  padding: 30px;
+  margin: 0;
+}
+
+img {
+  width: 60px;
+}
+
+.products {
+  background-color: #DFC79F;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.products:active,
+.products:focus,
+.products:hover {
+  background-color: #C8915B;
+}
+
+@media screen and (min-width: 480px) {
+  .flexbox__products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+  }
+  
+  .products {
+  margin: 0;
+    margin-bottom: 30px;
+}
+  
+  .header__flex {
+  justify-content: flex-start;
+  align-items: center;
+    gap: 30px;
+}
+  
+  #video {
+  height: 400px;
+}
+}
+
+@media screen and (min-width: 960px) {
+  #video {
+  width: 60%;
+    height: 500px;
+}
+}
